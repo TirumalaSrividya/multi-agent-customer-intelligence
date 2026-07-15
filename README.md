@@ -122,8 +122,9 @@ customer-intel-platform
 ```
           
 
-```
+
 LMCache Architecture
+```
 
              Shared LLM Backend
                      │
@@ -165,16 +166,18 @@ Start FastAPI Server
 python scripts/run_server.py 
 ``` 
 
-Swagger UI Available at http://localhost:8080/docs
-
+Swagger UI Available at 
+```
+http://localhost:8080/docs
+```
 
 Example Request
-
+```
 {
   "session_id": "user1",
   "message": "How do I reset my password?"
 }
-
+```
 
 ## Knowledge Base Ingestion
 
