@@ -109,6 +109,7 @@ cd customer-intel-platform
 
 ``` 
 pip install -r requirements.txt
+pip install pytest
 
 ``` 
 
