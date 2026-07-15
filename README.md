@@ -88,37 +88,9 @@ customer-intel-platform
 
 ## High Level Architecture
 ```
+<img width="1094" height="998" alt="image" src="https://github.com/user-attachments/assets/d0abdf69-d7ee-4cd5-9e72-1cb2e8c57977" />
 
-                    +----------------------+
-                    |     User Request     |
-                    +----------+-----------+
-                               |
-                               ▼
-                 +---------------------------+
-                 | Intent Classifier Agent   |
-                 +------------+--------------+
-                              |
-                              ▼
-                 +---------------------------+
-                 | Knowledge Retriever Agent |
-                 +------------+--------------+
-                              |
-                              ▼
-                 +---------------------------+
-                 | Response Generator Agent  |
-                 +------------+--------------+
-                              |
-                              ▼
-                 +---------------------------+
-                 | Quality Checker Agent     |
-                 +------------+--------------+
-                              |
-               Quality Score >= Threshold?
-                     /                 \
-                  Yes                   No
-                   |                     |
-                   ▼                     ▼
-          Return Response              Retry
+                    
 ```
           
 
@@ -126,20 +98,8 @@ customer-intel-platform
 LMCache Architecture
 ```
 
-             Shared LLM Backend
-                     │
-     ┌───────────────┼───────────────┐
-     │               │               │
- Intent Agent   Retriever      Generator
-     │               │               │
-     └───────────────┼───────────────┘
-                     │
-             Shared KV Cache
-          (LMCache Prefix Cache)
-                     │
-             CPU / Disk Offload
-                     │
-               100+ Sessions
+<img width="1094" height="902" alt="image" src="https://github.com/user-attachments/assets/1f4619c1-6a7f-4f1c-9065-c8de09ef380c" />
+
 ```
 
 ## Installations
