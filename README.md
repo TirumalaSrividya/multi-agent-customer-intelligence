@@ -93,7 +93,7 @@ customer-intel-platform
 
 LMCache Architecture
 
-<img width="600" height="700" alt="image" src="https://github.com/user-attachments/assets/e7aa3e92-81ad-436d-9ba5-20a47529de38" />
+<img width="600" height="500" alt="image" src="https://github.com/user-attachments/assets/e7aa3e92-81ad-436d-9ba5-20a47529de38" />
 
 
 ## Installations
